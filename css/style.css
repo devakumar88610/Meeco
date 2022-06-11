@@ -44,7 +44,6 @@ cursor: pointer;
   font-size: 20px;
   padding-right: 10px;
   padding-left: 10px;
-  justify-content: flex-start;
 }
 
 @media (max-width: 1200px) {
@@ -59,12 +58,14 @@ cursor: pointer;
       text-align: center;
   }
   
-  @media (min-width: 395px) {
+  @media (min-width: 280px) {
       .form-inline {
       display: none;    
       }
       .navbar-brand {
-          width: 200px;
+          width: 150px;
+          padding: 0;
+          margin-left: 0;
       }
   }
 }
@@ -87,10 +88,10 @@ cursor: pointer;
 
 /* card */
 
-.card {
+.card-fixed-top {
   background: none;
   border: none;
-  margin-top: -8rem;
+  margin-top: -7rem;
   z-index: 15;
 }
 
