@@ -5,10 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+<!-- font awsome -->
+    <script src="https://kit.fontawesome.com/e0178e5a25.js"></script>
+
+<!-- Bootsrap CND Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- custom stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
 </head>
 <body>
 <?php include 'header.php';?>
 
+<!-- header start -->
+<!--Navbar1-->
+
+<nav class="container-fluid navbar navbar-expand-lg navbar-light bg-dark p-0">
+  <div class="navbar m-auto" >
+    <button  type="button" class="btn mr-3">My Portfolio</button>
+        <ul class="navbar-nav list-inline">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100076987493801" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100076987493801" target="_blank">
+          <i class="fa-brands fa-instagram" ></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.facebook.com/profile.php?id=100076987493801" target="_blank">
+          <i class="fa-brands fa-twitter" ></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!--Navbar2-->
+
+  <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light p-3">
+      <img class="navbar-brand ml-5" src="./Images/meeco2.png" width="200px">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>        
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav mr-5 text-uppercase" style="font-size: 18px;">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+          </ul>
+      </div>
+      
+      <!-- Search Bar -->
+        <form class="form-inline mr-5">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+  </nav>
+
+<!-- header end -->
+
+<h1 class="text-center">Contact</h1>
+
+<!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
