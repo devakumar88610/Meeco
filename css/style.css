@@ -3,7 +3,11 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'poppins';
+    font-family: 'poppins' sans-serif;
+}
+
+html{
+  
 }
 
 /* navbar */
@@ -88,16 +92,30 @@ cursor: pointer;
 
 /* card */
 
+.card{
+  border-radius: 20px;
+  width: 50px;
+}
+
 .card-fixed-top {
-  background: none;
-  border: none;
   margin-top: -7rem;
   z-index: 15;
 }
 
-.card-img-top{
-  border-radius: 20px;
-  height: auto;
-
+.card-inner{
+  overflow: hidden;
+  cursor: pointer;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+
+.card-inner img{
+  transition: all 1.5s ease;
+}
+
+.card-inner:hover img{
+  transform: scale(1.5);
+  background-color: #0298CA;
+}
+
 
