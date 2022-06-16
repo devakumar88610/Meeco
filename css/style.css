@@ -3,11 +3,11 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'poppins' sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 html{
-  
+  scroll-behavior:smooth;
 }
 
 /* navbar */
@@ -20,13 +20,11 @@ html{
 .navbar{
 position: sticky;
 top: 0;
-z-index: 4;
+z-index: 100;
 }
-
 
 .navbar-brand {
 cursor: pointer;
-
 }
 
 .btn {
@@ -34,6 +32,7 @@ cursor: pointer;
   background: linear-gradient(to right, #21367F 0%, #0298CA 100%);
   border-color: #0298CA;
   font-family: "poppins";
+  border-radius: 0;
 }
 
 .btn:hover {
@@ -43,11 +42,13 @@ cursor: pointer;
 }
 
 .fa-brands {
+  position:relative;
+align-items: center;
   text-align: center;
   color: white;
-  font-size: 20px;
-  padding-right: 10px;
-  padding-left: 10px;
+  font-size: 25px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 @media (max-width: 1200px) {
@@ -76,30 +77,49 @@ cursor: pointer;
 
 /* Slider */
 
-.carousel {
-    margin-bottom: 4rem;
-  }
+.carousel-item{
+-webkit-background-size: cover;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+height: 100vh;
+}
 
-  .carousel-caption {
-    bottom: 5rem;
-    z-index: 1;
-  }
+.carousel-item::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  opacity: 0.3;
+}
 
-  .carousel-caption h5 {
-    font-size: 40px;
-    font-weight: 500;
-  }
+.carousel-caption {
+  bottom: 400px;
+}
+
+.carousel-caption h5 {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.carousel-caption p{
+  font-size: 25px;
+}
 
 /* card */
 
 .card{
   border-radius: 20px;
   width: 50px;
+  z-index: 15;
 }
 
 .card-fixed-top {
-  margin-top: -7rem;
-  z-index: 15;
+  margin-top: -4rem;
 }
 
 .card-inner{
@@ -110,12 +130,9 @@ cursor: pointer;
 }
 
 .card-inner img{
-  transition: all 1.5s ease;
+  transition: all 1.2s ease;
 }
 
 .card-inner:hover img{
   transform: scale(1.5);
-  background-color: #0298CA;
 }
-
-
