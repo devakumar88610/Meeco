@@ -24,7 +24,7 @@
 <!-- header start -->
 <!--Navbar1-->
 
-<nav class="container-fluid navbar navbar-expand navbar-dark bg-dark">
+<nav class="container-fluid navbar navbar-expand navbar-dark bg-dark p-0">
   <div class="navbar m-auto" >
     <button  type="button" class="btn mr-3">My Portfolio</button>
         <ul class="navbar-nav justify-content-center flex-center">
@@ -68,10 +68,12 @@
       
       <!-- Search Bar -->
         <form class="form-inline mr-5">
+          
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
           <button class="btn" type="submit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
+          
         </form>
   </nav>
 
@@ -83,7 +85,7 @@
 
   <!--Slider-->
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
     <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
@@ -184,8 +186,32 @@
 
 <!-- contact -->
 <section id="services">
-  <div class="container">
-    <h2 class="text-center">Contact</h2>
+  <div class="container services">
+    <h2 class="text-center contact-title">Contact</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+          </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name">
+          </div>
+      </div>
+      <div class="col-md-8">
+        <div class="form-group">
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          </div>
+      </div>
+      <div class="col-md-8">
+        <div class="form-group">
+          <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      
+    </div>
   </div>
 </section>
       

@@ -85,6 +85,12 @@ background-position: center center;
 height: 100vh;
 }
 
+.carousel-item img{
+  height: 100vh;
+  min-width:min-content;
+  width: min-content;
+}
+
 .carousel-item::before{
   content: "";
   display: block;
@@ -135,4 +141,9 @@ height: 100vh;
 
 .card-inner:hover img{
   transform: scale(1.5);
+}
+
+.services{
+  background-color: #e2e2e2;
+
 }
