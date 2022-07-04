@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meeco</title>
 
+
   <!-- font awsome -->
   <script src="https://kit.fontawesome.com/e0178e5a25.js"></script>
 
@@ -206,20 +207,29 @@
       </div>
       <div class="col-md-8 mt-5 mb-5">
         <div class="row">
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="First Name" >
+          <div class="col-md-6 mb-3 input-group">
+            <input type="text" class="form-control" placeholder="First Name" id="contact-fname" onkeyup="validateName()">
+            <span id="fname-error"></span>
           </div>
-          <div class="col-md-6 mb-3">
-            <input type="text" class="form-control" placeholder="Last Name" >
+          <div class="col-md-6 mb-3 input-group">
+            <input type="text" class="form-control" placeholder="Last Name" id="contact-lname" onkeyup="validateName1()">
+            <span id="lname-error"></span>
           </div>
-          <div class="col-md-12 mb-3">
-            <input type="text" class="form-control" placeholder="Enter Email" >
+          <div class="col-md-12 mb-3 input-group">
+            <input type="text" class="form-control" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
+            <span id="email-error"></span>
           </div>
-          <div class="col-md-12 mb-3">
-            <input type="text" class="form-control" placeholder="Phone Number" >
+          <div class="col-md-12 mb-3 input-group">
+            <input type="text" class="form-control" placeholder="Phone Number" id="contact-phone" onkeyup="validatePhone()">
+            <span id="phone-error"></span>
+          </div>
+          <div class="col-md-12 mb-3 input-group">
+            <textarea type="text" rows="4" class="form-control" placeholder="Message" id="contact-message" onkeyup="validateMessage()"></textarea>
+            <span id="message-error"></span>
           </div>
           </div>
-          <button type="submit" class="btn btn-primary" >SUBMIT</button>
+          <button onclick="return validateForm()" type="submit" class="btn btn-primary" >SUBMIT</button>
+          <span id="submit-error"></span>
         </div>
       </div>
     </div>
@@ -236,9 +246,10 @@
 
 
 
+  <!-- Javascript -->
+  <script src="./one.js" type="text/javascript"></script>
 
-
-  <!-- script -->
+  <!-- script CDN -->
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>

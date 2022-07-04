@@ -43,7 +43,7 @@ cursor: pointer;
 
 .fa-brands {
   position:relative;
-align-items: center;
+  align-items: center;
   text-align: center;
   color: white;
   font-size: 25px;
@@ -78,11 +78,11 @@ align-items: center;
 /* Slider */
 
 .carousel-item{
--webkit-background-size: cover;
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-height: 100vh;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
 }
 
 .carousel-item img{
@@ -144,8 +144,27 @@ height: 100vh;
   transform: scale(1.5);
 }
 
-.contact{
-  background-color: #e2e2e2;
-  height: 100%;
+/* Contact Form */
 
+.contact{
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+.input-group span{
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 14px;
+  color: red;
+
+}
+
+.input-group span i{
+  color: seagreen;
+}
+
+#submit-error{
+  position:absolute;
+  color: red;
 }
