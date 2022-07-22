@@ -27,10 +27,16 @@
   <!-- header start -->
   <!--Navbar1-->
 
-  <nav class="container-fluid navbar navbar-expand navbar-dark bg-dark p-0">
-    <div class="navbar m-auto">
-      <button type="button" class="btn mr-3">My Portfolio</button>
-      <ul class="navbar-nav justify-content-center flex-center">
+  <nav class="container-fluid navbar navbar-expand navbar-dark bg-dark">
+    <div class="col-md-6 ml-4">
+      <p>Welcome to Meeco</p>
+    </div>
+
+    <div class="col-md-6">
+      <div class="">
+        <button type="button" class="btn mr-3">My Portfolio</button>
+      </div>
+      <ul class="navbar-nav justify-content-end mr-5">
         <li class="nav-item">
           <a class="nav-link" href="https://www.facebook.com/profile.php?id=100076987493801" target="_blank">
             <i class="fa-brands fa-facebook"></i>
@@ -63,7 +69,7 @@
     </button>
     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
       <ul class="navbar-nav text-uppercase mr-5" style="font-size: 18px;">
-        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
         <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -188,64 +194,66 @@
   <section id="about">
     <div class="container text-center">
       <h4 class="">About</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore delectus consectetur repellendus! Omnis atque ducimus, voluptatem laudantium doloribus id perspiciatis beatae modi cupiditate, optio ipsa suscipit provident sunt, amet nostrum aspernatur repellat? Facere, iste quos exercitationem sapiente excepturi nam iusto aperiam voluptatibus, fugit, dolorum fuga. Dicta voluptates eum delectus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempore delectus consectetur repellendus!
+        Omnis atque ducimus, voluptatem laudantium doloribus id perspiciatis beatae modi cupiditate, optio ipsa suscipit
+        provident sunt, amet nostrum aspernatur repellat? Facere, iste quos exercitationem sapiente excepturi nam iusto
+        aperiam voluptatibus, fugit, dolorum fuga. Dicta voluptates eum delectus.</p>
     </div>
   </section>
 
-
-
-
   <!-- Contacts -->
-<section id="contact">
-<div class="container-fluid contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mt-5">
-<h4>Contact us</h4>
-<p>#321, 2nd Cross, Kullappa Circle, Kammanahalli Bangalore-560 043</p>
-<p>Contact: +91 99007 60225</p>
-<p>Email: mailmeeco@gmail.com</p>
-      </div>
-      <div class="col-md-8 mt-5 mb-5">
+  <section id="contact">
+    <div class="container-fluid contact">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6 mb-3 input-group">
-            <input type="text" class="form-control" placeholder="First Name" id="contact-fname" onkeyup="validateName()">
-            <span id="fname-error"></span>
+          <div class="col-md-4 mt-5">
+            <h4>Contact us</h4>
+            <p>#321, 2nd Cross, Kullappa Circle, Kammanahalli Bangalore-560 043</p>
+            <p>Contact: +91 99007 60225</p>
+            <p>Email: mailmeeco@gmail.com</p>
           </div>
-          <div class="col-md-6 mb-3 input-group">
-            <input type="text" class="form-control" placeholder="Last Name" id="contact-lname" onkeyup="validateName1()">
-            <span id="lname-error"></span>
+          <div class="col-md-8 mt-5 mb-5">
+            <div class="row">
+              <div class="col-md-6 mb-3 input-group">
+                <input type="text" class="form-control" placeholder="First Name" id="contact-fname"
+                  onkeyup="validateName()">
+                <span id="fname-error"></span>
+              </div>
+              <div class="col-md-6 mb-3 input-group">
+                <input type="text" class="form-control" placeholder="Last Name" id="contact-lname"
+                  onkeyup="validateName1()">
+                <span id="lname-error"></span>
+              </div>
+              <div class="col-md-12 mb-3 input-group">
+                <input type="text" class="form-control" placeholder="Enter Email" id="contact-email"
+                  onkeyup="validateEmail()">
+                <span id="email-error"></span>
+              </div>
+              <div class="col-md-12 mb-3 input-group">
+                <input type="text" class="form-control" placeholder="Phone Number" id="contact-phone"
+                  onkeyup="validatePhone()">
+                <span id="phone-error"></span>
+              </div>
+              <div class="col-md-12 mb-3 input-group">
+                <textarea type="text" rows="4" class="form-control" placeholder="Message" id="contact-message"
+                  onkeyup="validateMessage()"></textarea>
+                <span id="message-error"></span>
+              </div>
+            </div>
+            <button onclick="return validateForm()" type="submit" class="btn btn-primary">SUBMIT</button>
+            <span id="submit-error"></span>
           </div>
-          <div class="col-md-12 mb-3 input-group">
-            <input type="text" class="form-control" placeholder="Enter Email" id="contact-email" onkeyup="validateEmail()">
-            <span id="email-error"></span>
-          </div>
-          <div class="col-md-12 mb-3 input-group">
-            <input type="text" class="form-control" placeholder="Phone Number" id="contact-phone" onkeyup="validatePhone()">
-            <span id="phone-error"></span>
-          </div>
-          <div class="col-md-12 mb-3 input-group">
-            <textarea type="text" rows="4" class="form-control" placeholder="Message" id="contact-message" onkeyup="validateMessage()"></textarea>
-            <span id="message-error"></span>
-          </div>
-          <div class="col-md-12 mb-3">
-            <textarea type="text" class="form-control" rows="3" placeholder="Message"></textarea>
-          </div>
-          </div>
-          <button onclick="return validateForm()" type="submit" class="btn btn-primary" >SUBMIT</button>
-          <span id="submit-error"></span>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</section>
+    </div>
+  </section>
 
-<div class="container-fluid bg-dark p-2 text-white text-center">
-  <div class="">
-    <p>&#169; Copyrights 2022 Meeco</p>
+  <div class="container-fluid bg-dark p-2 text-white text-center">
+    <div class="">
+      <p>&#169; Copyrights 2022 Meeco</p>
+    </div>
   </div>
-</div>
 
 
 

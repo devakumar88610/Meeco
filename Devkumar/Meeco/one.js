@@ -15,10 +15,10 @@ function validateName(){
         return false;
     }
     if(!fname.match(/^[A-Za-z]*$/)){
-        fnameError.innerHTML = 'Write valid name';
+        fnameError.innerHTML = 'enter valid name';
         return false;
     }
-    fnameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+    fnameError.innerHTML = 'Gokul';
     return true;
 }
 
@@ -30,7 +30,7 @@ function validateName1(){
         return false;
     }
     if(!lname.match(/^[A-Za-z]*$/)){
-        lnameError.innerHTML = 'Write valid name';
+        lnameError.innerHTML = 'enter valid name';
         return false;
     }
     lnameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
