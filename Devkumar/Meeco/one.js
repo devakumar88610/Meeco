@@ -18,7 +18,7 @@ function validateName(){
         fnameError.innerHTML = 'enter valid name';
         return false;
     }
-    fnameError.innerHTML = 'Gokul';
+    fnameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
     return true;
 }
 
@@ -60,7 +60,7 @@ function validatePhone(){
         return false;
     }
     if(phone.length !== 10){
-        phoneError.innerHTML = '10 digits'
+        phoneError.innerHTML = 'enter 10 digit number'
         return false;
     }
     if(!phone.match(/^[0-9]{10}$/)){
@@ -73,7 +73,7 @@ function validatePhone(){
 
 function validateMessage(){
     let message = document.getElementById('contact-message').value;
-    let required = 30;
+    let required = 20;
     let left = required - message.length;
 
     if(left > 0){
