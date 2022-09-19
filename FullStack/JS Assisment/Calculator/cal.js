@@ -4,24 +4,24 @@ let buttons = Array.from(document.getElementsByClassName('button'));
 
 buttons.map( button => {
     button.addEventListener('click', (e) => {
-        switch(e.target.innerText){
+        switch(e.target.innerHTML){
             case 'C':
-                display.innerText = '';
+                display.innerHTML = '';
                 break;
             case '=':
                 try{
-                    display.innerText = eval(display.innerText);
+                    display.innerHTML = eval(display.innerHTML);
                 } catch {
-                    display.innerText = "Error"
+                    display.innerHTML = "Error"
                 }
                 break;
             case '←':
-                if (display.innerText){
-                    display.innerText = display.innerText.slice(0, -1);
+                if (display.innerHTML){
+                    display.innerHTML = display.innerHTML.slice(0, -1);
                 }
                 break;
             default:
-                display.innerText += e.target.innerText;
+                display.innerHTML += e.target.innerHTML;
         }
     });
 });
