@@ -11,12 +11,11 @@ body{
     background-color: #0298CA;
 }
 
-
 .container{
     max-width: 300px;
     margin: 12vh auto 0 auto;
     border-radius: 8px;
-    background-color: #f3f3f3;
+    background-color: #f1f9f9;
     border: 1px #fff solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -38,7 +37,7 @@ body{
 
 .button{
     background-color: #fff;
-    border: 1px solid #d9d9d9;
+    border: 0.5px solid #d9d9d9;
     height: 80px;
     font-size: 20px;
     margin: 1px;
@@ -59,13 +58,12 @@ body{
     background-color: #21367f;
 }
 
+.operator{
+    opacity: 0.5;
+}
+
 @media screen and (min-width: 1000px) {
     .container{
         max-width: 900px;
     }
 }
-
- 
- .operator{
-    opacity: 0.5;
- }
