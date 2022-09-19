@@ -59,12 +59,12 @@ body{
     background-color: #21367f;
 }
 
-/* @media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
     .container{
         max-width: 900px;
     }
 }
- */
+
  
  .operator{
     opacity: 0.5;
