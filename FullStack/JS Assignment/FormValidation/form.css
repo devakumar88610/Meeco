@@ -27,6 +27,7 @@ body{
     display: inline-block;
     margin-left: 18px;
 }
+
 .btn-mycolor{
     width: 100%;
     height: 35px;
@@ -57,4 +58,13 @@ body{
     margin-top: 20px;
     text-align: center;
     text-decoration: none;
+<<<<<<< HEAD
 }git
+=======
+}
+
+.forget{
+    margin-left: 4px;
+    margin-bottom: 10px;
+}
+>>>>>>> 0ff92af6fb2f63bc60bc369c69ed4aa496a2be04
