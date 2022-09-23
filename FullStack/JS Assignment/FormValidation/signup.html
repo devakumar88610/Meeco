@@ -20,32 +20,37 @@
   </head>
   <body>
     <div class="signup-form-container">
-      <form>
-        <h5 class="heading">Create New Account</h5>
 
+      <form>
         <div class="col-12">
           <div class="row">
+
+            <div class="col-12">
+              <h5 class="heading">Create new account</h5>
+            </div>
+
             <div class="form-group col-6">
-              <input type="text" class="form-control" id="first-name" placeholder="First name" onkeypress="validateName1()"/>
+              <input type="text" class="form-control" id="first-name" placeholder="First name" onkeyup="validateName1()"/>
               <span id="fname-error"></span>
             </div>
+
             <div class="form-group col-6">
-              <input type="text" class="form-control" id="last-name" placeholder="Last name" onkeypress="validateName2()"/>
+              <input type="text" class="form-control" id="last-name" placeholder="Last name" onkeyup="validateName2()"/>
               <span id="lname-error"></span>
             </div>
 
             <div class="form-group col-12">
-              <input type="text" class="form-control" id="mobile-number" placeholder="Mobile number or email" onkeypress="validateMobile()"/>
+              <input type="text" class="form-control" id="mobile-number" placeholder="Email" onkeyup="validateMobile()"/>
             <span id=mobile-error></span>
             </div>
 
             <div class="form-group col-12">
-              <input type="password" class="form-control" id="password-one" placeholder="Password" onkeypress="validatePassword1()"/>
+              <input type="password" class="form-control" id="password-one" placeholder="Password" onkeyup="validatePassword1()"/>
               <span id="password-error1"></span>
             </div>
 
             <div class="form-group col-12">
-              <input type="password" class="form-control" id="password-two" placeholder=" Confirm password" onkeypress="validatePassword2()"/>
+              <input type="password" class="form-control" id="password-two" placeholder=" Confirm password" onkeyup="validatePassword2()"/>
               <span id="password-error2"></span>
             </div>
 
@@ -54,7 +59,8 @@
               <label>Accept terms & conditions</label>
             </div>
 
-            <button type="submit" class="btn-mycolor btn1">Sign up</button>
+            <button type="submit" onclick="validateForm()" class="btn-mycolor btn1">Sign up</button>
+            <span id="submit-error"></span>
             <button type="submit" class="btn-mycolor btn2">
               Sign Up with Google <i class="fa-brands fa-google"></i>
             </button>

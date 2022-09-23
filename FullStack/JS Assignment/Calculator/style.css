@@ -8,6 +8,10 @@
 }
 
 body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #0298CA;
 }
 
@@ -18,8 +22,7 @@ p{
 }
 
 .container{
-    max-width: 300px;
-    margin: 10vh auto 0 auto;
+    width: 300px;
     border-radius: 8px;
     background-color: #f1f9f9;
     border: 1px #fff solid;

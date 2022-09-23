@@ -77,7 +77,7 @@ function validateMessage(){
     let left = required - message.length;
 
     if(left > 0){
-        messageError.innerHTML = left + 'more characters requires';
+        messageError.innerHTML = left + ' more characters requires';
         return false;
     }
 
