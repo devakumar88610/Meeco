@@ -89,7 +89,7 @@ function validateForm(){
     if(!validateName() || !validateName1() || !validateEmail() || !validatePhone() || !validateMessage()){
         submitError.style.display = 'block';
         submitError.innerHTML = 'Fix error to Submit';
-        setTimeout(function(){submitError.style0display = 'none';}, 3000);
+        setTimeout(function(){submitError.style.display = 'none';}, 3000);
         return false;
     }
 }

@@ -89,9 +89,10 @@ function validatePassword2(){
 }
 
 function validateForm(){
-    if(validateName1() || validateName2() || validateMobile() || validatePassword1() || validatePassword2())
-    submitError.style.display = 'block';
+    if(validateName1() || validateName2() || validateMobile() || validatePassword1() || validatePassword2()){
+        submitError.style.display = 'block';
         submitError.innerHTML = '';
-        setTimeout(function(){submitError.style0display = 'block';}, 3000);
+        setTimeout(function(){submitError.style.display = 'none';}, 3000);
         return false;
+    }
 }

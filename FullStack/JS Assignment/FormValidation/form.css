@@ -70,7 +70,11 @@ form span i {
     top: 13px;
     right: 26px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
+}
+
+form span .fa-circle-exclamation{
+    color: orange;
 }
 
 form span .fa-circle-check{

@@ -27,12 +27,14 @@ p{
     background-color: #f1f9f9;
     border: 1px #fff solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow:hidden ;
 }
+
 
 #display{
     text-align: right;
     height: 100px;
-    line-height: 13vh;
+    line-height: 14vh;
     font-size: 35px;
     font-weight: 500;
     padding: 15px;
