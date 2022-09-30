@@ -98,6 +98,7 @@ let employees = [{"id":1,"name":"Dinesh","gender":"Male","email":"dinesh@ibm.com
 {"id":98,"name":"Akim","gender":"Male","email":"abloxam2p@gnu.org"},
 {"id":99,"name":"Kipp","gender":"Male","email":"kcafe2q@google.com.br"},
 {"id":100,"name":"Normy","gender":"Male","email":"nbezzant2r@bandcamp.com"}]
+
 function displayData(){
     let rows = ""
     let i = 0;
