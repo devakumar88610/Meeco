@@ -5,7 +5,7 @@
 class Account {
     min_Bal = 5000;
     account_Open(){
-
+        console.log('Hello');
     }
     deposit_Amount(){
 

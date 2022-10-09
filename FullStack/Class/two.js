@@ -1,10 +1,10 @@
 // Creating Class with this keyword
-// this keyword is pointer to current object
+// this keyword refers to an object
 
 class Employee{
-    emp_Id;
-    emp_Name;
-    emp_Salary;
+    // emp_Id;
+    // emp_Name;
+    // emp_Salary;
 
     set_Id(id){
         this.emp_Id = id
