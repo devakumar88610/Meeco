@@ -1,22 +1,21 @@
-import React, {useState} from "react";
+import React from "react";
 import {Button} from "react-bootstrap";
 import Searchbar from "../Navbar/Searchbar";
 
 function Dummy() {
-  const [open, setOpenSearchbar] = useState(false);
+  const [open, setOpen] = React.useState(false);
+
   return (
     <div>
       <Button
         variant='outiline-color-light'
         className='second-button mr-4'
-        style={{fontSize: "18px"}}
-        onClick={() => {
-          setOpenSearchbar(true);
-        }}
+        style={{position: "absolute", zIndex: 1}}
+        onClick={() => setOpen(true)}
       >
         <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
       </Button>
-      {open === <Searchbar />}
+      <Searchbar show={open}></Searchbar>
     </div>
   );
 }

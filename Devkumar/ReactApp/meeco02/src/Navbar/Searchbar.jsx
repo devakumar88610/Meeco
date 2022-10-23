@@ -1,11 +1,14 @@
 import "../Navbar/Searchbar.css";
 
 import React from "react";
-function Searchbar() {
+function Searchbar({open, onClose}) {
+  if (!open) {
+    return null;
+  }
   return (
     <div>
       <form className='form__container'>
-        <button>
+        <button onClick={onClose}>
           <i class='fa-solid fa-xmark'></i>
         </button>
         <input

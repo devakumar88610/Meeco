@@ -7,7 +7,7 @@ class NavbarTop extends Component {
   render() {
     return (
       <Navbar
-        style={{backgroundColor: "#0298CA"}}
+        style={{backgroundColor: "#21367F"}}
         expand='lg'
         className='text-white'
       >
