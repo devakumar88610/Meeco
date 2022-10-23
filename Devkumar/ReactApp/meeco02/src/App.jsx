@@ -6,14 +6,14 @@ import About from "./Pages/About";
 import Pricing from "./Pages/Pricing";
 import Contact from "./Pages/Contact";
 
-import Navbar from "./Components/Navbar";
-import NavbarTop from "./Components/NavbarTop";
+import NavbarTop from "./Navbar/NavbarTop";
+import NavigationBar from "./Navbar/Navbar";
 
 const App = () => {
   return (
     <BrowserRouter>
       <NavbarTop />
-      <Navbar />
+      <NavigationBar />
 
       <Routes>
         <Route index element={<Home />} />

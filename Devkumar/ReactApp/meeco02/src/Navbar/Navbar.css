@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+.sticky-nav{
+position: sticky;
+top: 0;
+z-index: 100;
+}
+
+.button{
+  color: #fff;
+  background: #21367F;
+  border: none;
+  box-shadow: none!important;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+
+.button:hover{
+  color: #fff;
+  background-color: #0298CA;
+}
+
+.second-button{
+box-shadow: none!important;
+border: none;
+background-color: transparent;
+}
