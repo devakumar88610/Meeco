@@ -28,7 +28,7 @@
     color: #0298CA!important;
 }
 
-/* .nav-link:after{
+.nav-link:after{
     content: '';
     position: absolute;
     background-color: #21367F;
@@ -41,7 +41,7 @@
 
 .nav-link:hover:after{
     width: 100%;
-} */
+}
 
 .navbar{
     position: sticky;

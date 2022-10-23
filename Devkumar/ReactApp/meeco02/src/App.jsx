@@ -7,10 +7,13 @@ import Pricing from "./Pages/Pricing";
 import Contact from "./Pages/Contact";
 
 import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import NavbarTop from "./Components/NavbarTop";
 
 const App = () => {
   return (
     <BrowserRouter>
+      <NavbarTop />
       <Navbar />
       <Hero />
 
