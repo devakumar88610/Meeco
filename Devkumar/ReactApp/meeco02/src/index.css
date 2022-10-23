@@ -2,14 +2,11 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
 }
 
-code {
-  font-family: 'Poppins', sans-serif;
-}
+
 
 :root{
   --primary-color: #21367F;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 
 import Logo from "../Images/Logo.svg";
 import {Links} from "../data";
@@ -8,8 +8,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Button from "react-bootstrap/Button";
 import "../Components/Navbar.css";
+import Searchbar from "./Searchbar";
 
-const NavigationBar = () => {
+function NavigationBar() {
+  const [show, setOpenSearchbar] = useState(false);
+
   return (
     <Navbar bg='light' expand='lg' className='sticky-nav'>
       <Container className='py-2 sticky-nav'>
@@ -45,16 +48,20 @@ const NavigationBar = () => {
             variant='outiline-color-light'
             className='second-button mr-4'
             style={{fontSize: "18px"}}
-            type='submit'
-            onClick={"submit"}
+            onClick={() => {
+              setOpenSearchbar(true);
+            }}
           >
             <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
           </Button>
+          {show === <Searchbar />}
 
-          <Button className='button'>Get in Touch</Button>
+          <Button type='submit' className='button'>
+            Get in Touch
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-};
+}
 export default NavigationBar;

@@ -12,14 +12,17 @@ z-index: 100;
 
 .button{
   color: #fff;
-  background: var(--primary-color);
+  background: #21367F;
+  border: none;
+  box-shadow: none!important;
   border-radius: 50px;
   transition: all 0.5s;
 }
 
+
 .button:hover{
   color: #fff;
-  background-color: var(--secondary-color) ;
+  background-color: #0298CA;
 }
 
 .second-button{

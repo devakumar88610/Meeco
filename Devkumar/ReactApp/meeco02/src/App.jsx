@@ -7,7 +7,6 @@ import Pricing from "./Pages/Pricing";
 import Contact from "./Pages/Contact";
 
 import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
 import NavbarTop from "./Components/NavbarTop";
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
     <BrowserRouter>
       <NavbarTop />
       <Navbar />
-      <Hero />
 
       <Routes>
         <Route index element={<Home />} />
