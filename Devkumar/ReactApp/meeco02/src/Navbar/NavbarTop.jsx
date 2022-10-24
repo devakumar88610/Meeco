@@ -24,8 +24,7 @@ class NavbarTop extends Component {
                 <li key={index}>
                   <Nav.Link
                     target='_blank'
-                    className='text-white pl-4'
-                    style={{fontSize: "18px"}}
+                    className=' btn__sm__icon'
                     href={link}
                   >
                     <i className={icon}></i>

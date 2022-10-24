@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import Searchbar from "../Navbar/Searchbar";
 
 function Dummy() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <div>
@@ -15,7 +15,7 @@ function Dummy() {
       >
         <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
       </Button>
-      <Searchbar show={open}></Searchbar>
+      {open && <Searchbar />}
     </div>
   );
 }

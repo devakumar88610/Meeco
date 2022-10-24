@@ -1,6 +1,5 @@
 import react from "react";
 import "../Components/Hero.css";
-import Carousel from "react-bootstrap/Carousel";
 
 import SliderOne from "../Images/Sileder-one.jpg";
 import SliderTwo from "../Images/Silder-two.jpg";
@@ -9,33 +8,41 @@ import SliderThree from "../Images/Slider-three.jpg";
 class Hero extends react.Component {
   render() {
     return (
-      <Carousel fade>
-        <Carousel.Item>
-          <img className='d-block w-100' src={SliderOne} alt='First slide' />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className='d-block w-100' src={SliderTwo} alt='Second slide' />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className='d-block w-100' src={SliderThree} alt='Third slide' />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      <div
+        id='carouselExampleFade'
+        class='carousel slide carousel-fade'
+        data-ride='carousel'
+      >
+        <div class='carousel-inner'>
+          <div class='carousel-item active'>
+            <img src={SliderOne} class='d-block w-100' alt='...' />
+          </div>
+          <div class='carousel-item'>
+            <img src={SliderTwo} class='d-block w-100' alt='...' />
+          </div>
+          <div class='carousel-item'>
+            <img src={SliderThree} class='d-block w-100' alt='...' />
+          </div>
+        </div>
+        <button
+          class='carousel-control-prev'
+          type='button'
+          data-target='#carouselExampleFade'
+          data-slide='prev'
+        >
+          <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+          <span class='sr-only'>Previous</span>
+        </button>
+        <button
+          class='carousel-control-next'
+          type='button'
+          data-target='#carouselExampleFade'
+          data-slide='next'
+        >
+          <span class='carousel-control-next-icon' aria-hidden='true'></span>
+          <span class='sr-only'>Next</span>
+        </button>
+      </div>
     );
   }
 }

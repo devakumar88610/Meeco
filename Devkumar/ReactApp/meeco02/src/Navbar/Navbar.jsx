@@ -1,13 +1,12 @@
 import React from "react";
-
 import Logo from "../Images/Logo.svg";
 import {Links} from "../data";
+import "../index.css";
 
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Button from "react-bootstrap/Button";
-import "../Navbar/Navbar.css";
+
 import Searchbar from "./Searchbar";
 
 function NavigationBar() {
@@ -16,13 +15,13 @@ function NavigationBar() {
   return (
     <>
       <Navbar bg='light' expand='lg' className='sticky-nav'>
-        <Container className='py-2 sticky-nav'>
+        <Container className='py-2'>
           <Navbar.Brand href='/'>
             <img src={Logo} alt='Meeco' width={200} />
           </Navbar.Brand>
 
           <Navbar.Toggle
-            className='fa-solid fa-burger-soda'
+            className='fa-solid fa-burger-soda ml-auto'
             aria-controls='navbarScroll'
           />
           <Navbar.Collapse id='navbarScroll'>
@@ -45,19 +44,14 @@ function NavigationBar() {
                 );
               })}
             </Nav>
-            <Button
-              variant='outiline-color-light'
-              className='second-button mr-4'
-              style={{fontSize: "18px"}}
-              onClick={() => setOpen(true)}
-            >
-              <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
-            </Button>
-
-            <Button type='submit' className='button'>
-              Get in Touch
-            </Button>
           </Navbar.Collapse>
+          <button className='btn__icon mr-4' onClick={() => setOpen(true)}>
+            <i class='fa-sharp fa-solid fa-magnifying-glass'></i>
+          </button>
+
+          <button type='submit' className='button__primary'>
+            Get in Touch
+          </button>
         </Container>
       </Navbar>
       <Searchbar show={open} onClose={() => setOpen(false)}></Searchbar>

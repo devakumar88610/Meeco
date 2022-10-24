@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 
 import NavbarTop from "./Navbar/NavbarTop";
 import NavigationBar from "./Navbar/Navbar";
+import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='pricing' element={<Pricing />} />
         <Route path='contact' element={<Contact />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };

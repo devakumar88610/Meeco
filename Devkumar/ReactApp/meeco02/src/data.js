@@ -25,7 +25,7 @@ export const SocialMedia = [
   {
     name: "Facebook",
     link: "https://www.facebook.com/people/Meeco/100084074254975/",
-    icon: "fa-brands fa-facebook-f",
+    icon: "fa-brands fa-facebook",
   },
   {
     name: "Instagram",
