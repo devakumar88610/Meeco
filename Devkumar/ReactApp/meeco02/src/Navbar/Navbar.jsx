@@ -54,7 +54,7 @@ function NavigationBar() {
           </button>
         </Container>
       </Navbar>
-      <Searchbar show={open} onClose={() => setOpen(false)}></Searchbar>
+      {open && <Searchbar />}
     </>
   );
 }

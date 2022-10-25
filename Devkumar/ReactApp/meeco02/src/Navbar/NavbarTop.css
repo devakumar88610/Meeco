@@ -8,8 +8,6 @@
 }
 
 .btn__sm__icon:hover{
-    background-color: #fff;
-    border-radius: 50px;
     color: var(--secondary-color)!important;
     transform:scale(1.2,1.2) translate3d(0,0,0);
 }

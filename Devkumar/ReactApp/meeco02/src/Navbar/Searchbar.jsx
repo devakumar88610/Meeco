@@ -3,7 +3,7 @@ import "../index.css";
 
 import React from "react";
 function Searchbar({open, onClose}) {
-  if (!open) {
+  if (open) {
     return null;
   }
   return (

@@ -21,6 +21,7 @@ body {
   --font-medium: 22px;
   --font-large: 28px;
   --font-xl: 34px;
+  --color-gradient: linear-gradient(to right, #21367F,#0298CA;);
 }
 
 body{
@@ -34,7 +35,7 @@ body{
   }
   
 
-/* Button Groups */
+/* Button Group  Primary*/
 
 .button__primary{
   color: #fff;
