@@ -1,9 +1,9 @@
-import Dummy from "../Components/Dummy";
+import TodoApp from "../Practices/TodoApp";
 
 const Pricing = () => {
   return (
     <div>
-      <Dummy />
+      <TodoApp />
       <h3 className='text-center mt-5'>Pricing Page</h3>
     </div>
   );
