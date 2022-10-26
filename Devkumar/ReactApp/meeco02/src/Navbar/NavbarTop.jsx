@@ -1,17 +1,17 @@
 import React, {Component} from "react";
-import {Container, Nav, Navbar} from "react-bootstrap";
+import {Nav, Navbar} from "react-bootstrap";
 import {SocialMedia} from "../data";
 import "../Navbar/NavbarTop.css";
 
 class NavbarTop extends Component {
   render() {
     return (
-      <Navbar
-        style={{backgroundColor: "#21367F"}}
+      <nav
+        style={{backgroundColor: "#0541a8"}}
         expand='lg'
-        className='text-white'
+        className='navbar navbar-expand-lg text-white'
       >
-        <Container>
+        <div className='container'>
           <Nav>
             <Navbar.Brand className='text-white' style={{fontSize: "18px"}}>
               Welcome to Meeco
@@ -33,8 +33,8 @@ class NavbarTop extends Component {
               );
             })}
           </Nav>
-        </Container>
-      </Navbar>
+        </div>
+      </nav>
     );
   }
 }

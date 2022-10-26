@@ -11,6 +11,7 @@ class Contactus extends Component {
 
   nameHandler = (event) => {
     this.setState({name: event.target.value});
+    console.log(event.target.value);
   };
   emailHandler = (event) => {
     this.setState({email: event.target.value});

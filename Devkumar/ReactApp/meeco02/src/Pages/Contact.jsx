@@ -4,7 +4,7 @@ import Contactus from "../Components/Contactus";
 const Contact = () => {
   return (
     <div>
-      <h3 className='text-center mt-5'>Contact Page</h3>
+      {/* <h3 className='text-center mt-5'>Contact Page</h3> */}
       <Contactus />
       {/* <Table /> */}
     </div>

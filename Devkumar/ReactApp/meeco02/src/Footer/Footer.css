@@ -2,3 +2,8 @@
     background-color: var(--primary-color);
     padding: 50px 0;
 }
+
+.footer__title{
+    border-width: thick;
+    border-color: aliceblue;
+}
