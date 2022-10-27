@@ -6,14 +6,12 @@ import About from "./Pages/About";
 import Pricing from "./Pages/Pricing";
 import Contact from "./Pages/Contact";
 
-import NavbarTop from "./Navbar/NavbarTop";
 import NavigationBar from "./Navbar/Navbar";
 import Footer from "./Footer/Footer";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <NavbarTop />
       <NavigationBar />
 
       <Routes>

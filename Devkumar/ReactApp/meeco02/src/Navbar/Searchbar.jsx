@@ -6,10 +6,11 @@ function Searchbar({open, onClose}) {
   if (open) {
     return null;
   }
+
   return (
     <div>
-      <form className='form__container__search'>
-        <div className='form__group'>
+      <form className='search__bar__container'>
+        <div className='form__group__search'>
           <button className='btn__icon__search' onClick={onClose}>
             <i class='fa-solid fa-xmark'></i>
           </button>
@@ -18,8 +19,6 @@ function Searchbar({open, onClose}) {
             placeholder='Search something you want!'
             className='form__control'
           />
-        </div>
-        <div className='form__group'>
           <button
             type='submit'
             className='btn__icon__search'

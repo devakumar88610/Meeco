@@ -1,9 +1,9 @@
 .footer__container{
-    background-color: var(--primary-color);
+    background-color: var(--gray-200);
     padding: 50px 0;
+    border-top: 1px solid var(--gray-400);
 }
 
 .footer__title{
-    border-width: thick;
-    border-color: aliceblue;
+    display: block;
 }
