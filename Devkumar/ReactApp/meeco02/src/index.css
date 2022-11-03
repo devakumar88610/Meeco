@@ -22,14 +22,10 @@ body {
   --font-large: 28px;
   --font-xl: 34px;
   --color-gradient: linear-gradient(to right, #21367F,#0298CA;);
-}
-
-body{
   --box-shadow-primary: 0px 15px 20px	rgba(2,152,202, 0.4);
 }
-  
 
-/* Button Group  Primary*/
+/* Button Group Primary*/
 
 .button__primary{
   color: #fff;
@@ -54,25 +50,25 @@ body{
   color: var(--primary-color);
   }
 
-  /* Form Groups */
+/* Form Groups and Controls */
 
-  .form__group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px;
-    border-bottom: 2px solid var(--primary-color);
-    transition: var(--transition);
+.form__group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border-bottom: 2px solid var(--primary-color);
+  transition: var(--transition);
 }
 
 .form__control{
-    width: 100%;
-    font-size: 20px;
-    outline: none;
-    border: none ;
-    background-color: transparent;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: none ;
+  background-color: transparent;
 }
 
 ::placeholder{
-    color: var(--gray-600);
+  color: var(--gray-600);
 }

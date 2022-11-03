@@ -9,18 +9,8 @@ class Contactus extends Component {
     message: "",
   };
 
-  nameHandler = (event) => {
-    this.setState({name: event.target.value});
-    console.log(event.target.value);
-  };
-  emailHandler = (event) => {
-    this.setState({email: event.target.value});
-  };
-  phoneHandler = (event) => {
-    this.setState({phone: event.target.value});
-  };
-  messageHandler = (event) => {
-    this.setState({message: event.target.value});
+  updateHandler = (event) => {
+    this.setState({[event.target.name]: event.target.value});
   };
 
   submitHandler = (event) => {
@@ -38,7 +28,8 @@ class Contactus extends Component {
               <input
                 className='form__control'
                 type='text'
-                onChange={this.nameHandler}
+                onChange={this.updateHandler}
+                name='name'
                 placeholder='Name'
               />
             </div>
@@ -47,7 +38,8 @@ class Contactus extends Component {
               <input
                 className='form__control'
                 type='text'
-                onChange={this.emailHandler}
+                onChange={this.updateHandler}
+                name='email'
                 placeholder='Email'
               />
             </div>
@@ -56,7 +48,8 @@ class Contactus extends Component {
               <input
                 className='form__control'
                 type='text'
-                onChange={this.phoneHandler}
+                onChange={this.updateHandler}
+                name='phone'
                 placeholder='Phone'
               />
             </div>
@@ -64,7 +57,8 @@ class Contactus extends Component {
               <textarea
                 class='form__control'
                 rows='3'
-                onChange={this.messageHandler}
+                onChange={this.updateHandler}
+                name='message'
                 placeholder='Message'
               ></textarea>
             </div>
