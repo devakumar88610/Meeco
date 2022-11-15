@@ -1,14 +1,9 @@
-import Contactus from "../Components/Contactus";
-// import Table from "../Practices/Table";
+import React from 'react'
 
 const Contact = () => {
   return (
-    <div>
-      {/* <h3 className='text-center mt-5'>Contact Page</h3> */}
-      <Contactus />
-      {/* <Table /> */}
-    </div>
-  );
-};
+    <div>Contact</div>
+  )
+}
 
-export default Contact;
+export default Contact
